@@ -8,18 +8,19 @@
 <body>
     <center><img src="123"></center>
     <h1 style="color:blueviolet"><center><u>STUDENT REGISTRATION FORM</u></center></h1>
-    <form style="background-color: blueviolet;">
+    <form style="background-color: blueviolet;" method="POST" action="thankyou.html">
         <fieldset>
         <label for="fname" style="color: cornsilk;" >FIRST NAME: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;</label>
-        <input type="text" name="fname" id="fname" value="Enter First Name" maxlength="30"><label style="color:cornsilk">(max 30 characters a-z and A-Z)</label>
+        <input type="text" placeholder="Enter First Name" name="fname" id="fname"  maxlength="30"><label style="color:cornsilk">(max 30 characters a-z and A-Z)</label>
         <br>
         <br>
         <label for="lname" style="color:cornsilk">LAST NAME: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;</label>
-        <input type="text" name="lname"  id="lname" value="Enter Last Name"  maxlength="30"><Label  style="color:cornsilk">(max 30 characters a-z and A-Z)</Label>
+        <input type="text" placeholder="Enter Last Name" name="lname"  id="lname"   maxlength="30"><Label  style="color:cornsilk">(max 30 characters a-z and A-Z)</Label>
         <br>
         <br>
         <label for="dob" style="color:cornsilk">DATE OF BIRTH: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
-
+        <input type="date" id="dob" name="date" value="date">
+<!-- 
         <select name="dateofbirth"  id="dob" value="Day">
             <option>Day</option>
             <option value="1">1</option>
@@ -53,8 +54,8 @@
             <option value="29">29</option>
             <option value="30">30</option>
             <option value="31">31</option>
-        </select>
-        <select name="dateofbirth" id="dob" value="Month">
+        </select> -->
+        <!-- <select name="dateofbirth" id="dob" value="Month">
            <option>Month</option>
         <option value="January">January</option>
         <option value="February">February</option>
@@ -69,8 +70,8 @@
         <option value="November">November</option>
         <option value="December">December</option>
        
-       </select>
-    <select name="dateofbirth" id="dob" value="Year">
+       </select> -->
+    <!-- <select name="dateofbirth" id="dob" value="Year">
 	<option>Year</option>
 	<option value="1993">1993</option>
 	<option value="1992">1992</option>
@@ -119,15 +120,15 @@
 	<option value="1949">1949</option>
 	<option value="1948">1948</option>
 	<option value="1947">1947</option>
-</select>
+</select> -->
 <br>
 <br>
 <label for="email" style="color:cornsilk">EMAIL ID: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
-<input type="email" name="emailid" id="email" value="Enter Email Address">
+<input type="email" placeholder="Enter Email Address" name="emailid" id="email" >
 <br>
 <br>
 <label for="num" style="color:cornsilk">MOBILE NUMBER: &nbsp; &nbsp; &nbsp; </label>
-<input  type="tel" name="mobilenum" id="num"  value="Enter Mobile Number"  maxlength="10"><label style="color: cornsilk;">(10 digit number)</label>
+<input  type="tel" placeholder="Enter Mobile Number" name="mobilenum" id="num" maxlength="10"><label style="color: cornsilk;">(10 digit number)</label>
 <br>
 <br>
 <label for="gen" style="color: cornsilk;">GENDER: &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
@@ -143,7 +144,7 @@
 <br>
 <br>
 <label for="city" style="color: cornsilk;">CITY:  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
-<input type="text" name="city" id="city" value="Enter city name"><label style="color: cornsilk;" maxlength="30">(max 30 characters a-z and A-Z)</label>
+<input type="text" placeholder="Enter city name" name="city" id="city"><label style="color: cornsilk;" maxlength="30">(max 30 characters a-z and A-Z)</label>
 <br>
 <br>
 <label for="pincode" style="color: cornsilk;">PIN CODE:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
@@ -151,7 +152,7 @@
 <br>
 <br>
 <label for="state" style="color: cornsilk;">STATE:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;</label>
-<input type="text" id="state" name="STATE" value="Enter Country">
+<input type="text" placeholder="Enter Country" id="state" name="STATE">
 <br>
 <br>
 <label for="hobbie" style="color: cornsilk;">HOBBIE:  &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; </label>
@@ -193,11 +194,7 @@
 <label style="color: cornsilk;">B.A</label>
 <br> 
 <br>
-&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;   &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;<button type="submit">submit Query</button>&nbsp;<button type="reset">Reset</button>
-
-
-
-
+<button type="submit" style="float:right;">submit Query</button>&nbsp;<button type="reset" style="float:right;">Reset</button>
 </fieldset>
 
     </form>
